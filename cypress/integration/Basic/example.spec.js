@@ -7,6 +7,10 @@ describe('Browser Actions', ()=>{
         cy.url().should('include', 'example.com')
     })
 
+    it('Should cwait for 3 seconds', ()=>{
+        cy.wait(3000)
+    })
+
     it('Should check correct element on the page', ()=>{
         cy.get('h1').should('be.visible')
     })
