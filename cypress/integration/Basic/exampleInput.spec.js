@@ -10,7 +10,7 @@ describe('working with inputs', ()=>{
         cy.visit('http://zero.webappsecurity.com/login.html', {timeout: 10000})
         cy.url().should('include', 'login')
         cy.log('website loaded')
-        cy.clearCkkoies({log: true})
+        cy.clearCookies({log: true})
         cy.clearLocalStorage('your item', {log: true})
         cy.title().should('include', 'zero - Log in')
     })
