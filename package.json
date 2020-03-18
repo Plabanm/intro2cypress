@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:update": "cypress run --env updateSnapshots=true",
+    "cy:run-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
+    "cy:run-with-noFailure": "cypress run --env failOnSnapshotDiff=false"
   },
   "keywords": [
     "cypress"
@@ -14,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^4.0.2",
+    "cypress-image-snapshot": "^3.1.1",
     "prettier": "^1.19.1"
   }
 }
