@@ -16,12 +16,14 @@
   "author": "plaban",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^4.0.2",
     "cypress-cucumber-preprocessor": "^2.0.1",
     "cypress-image-snapshot": "^3.1.1",
     "prettier": "^1.19.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^4.2.0"
   }
 }

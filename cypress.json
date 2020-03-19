@@ -10,6 +10,7 @@
     "requestTimeout": 15000,
     "responseTimeout": 15000,
     "video": false,
-    "failonStatusCode": false,
-    "ignoreTestfiles": ["*.js", "*.md"]
+    "failOnStatusCode": false,
+    "ignoreTestFiles": ["*.js", "*.md"],
+    "port": 8989
 }

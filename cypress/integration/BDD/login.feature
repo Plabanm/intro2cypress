@@ -6,5 +6,5 @@ Feature: Login to Application
 
    Scenario: Valid Login
    Given I open login Page
-   When I submit login form
+   When I submit login form with "username" and "password"
    Then I should see homePage
